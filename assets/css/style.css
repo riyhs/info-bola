@@ -1,0 +1,90 @@
+body {
+    overflow-x: hidden;
+}
+
+.myLogo {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: .6rem;
+}
+
+/* HOME */
+#isi-content .container {
+    height: calc(100vh - 66px);
+    padding-top: 140px;
+    overflow-x: hidden;
+}
+
+#isi-content .container h1 {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+.gambar-tendang {
+    position: absolute;
+    right: 7vw;
+    top: 5vh;
+    width: auto;
+    height: 90vh;
+}
+
+.gambar-bola {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: -220px;
+    bottom: 15vh;
+}
+
+.rounded-btn {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        overflow: hidden;
+    }
+
+    #isi-content .container {
+        padding-top: 100px;
+        height: calc(100vh - 56px);
+    }
+
+    .gambar-bola {
+        top: 25vh;
+        left: 63vw;
+    }
+
+    .myLogo {
+        top: .7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: hidden !important;
+    }
+
+    .myLogo {
+        top: .3rem !important;
+    }
+
+    .gambar-bola {
+        left: 46vw;
+        display: none;
+    }
+
+
+}
+
+/* END HOME */

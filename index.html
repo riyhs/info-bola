@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info Bola</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#263238">
+</head>
+
+<body>
+    <header>
+        <nav class="blue-grey darken-4 text-white" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo" id="logo-container">INFO
+                    <img class="myLogo" src="../assets/img/logo-512.png" alt="">
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="content"> </section>
+
+    <footer>
+    </footer>
+
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // registr sw
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/sw.js")
+                    .then(function () {
+                        console.log("Register Service Worker SUCCES!")
+                    })
+                    .catch(function () {
+                        console.error("Register Service Worker FAILED!")
+                    });
+            });
+        } else {
+            console.error("Service Worker un-available in this browser.");
+        }
+    </script>
+</body>
+
+</html>

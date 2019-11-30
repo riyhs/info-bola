@@ -1,0 +1,20 @@
+{
+    "name": "Aplikasi Info BOLA",
+    "short_name": "Info BOLA",
+    "description": "Aplikasi berisi informasi Sepak Bola Liga Inggris",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#263238",
+    "theme_color": "#263238",
+    "icons": [{
+            "src": "/assets/img/logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
