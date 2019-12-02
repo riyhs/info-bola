@@ -52,7 +52,7 @@ body {
 
 @media only screen and (max-width: 992px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     #isi-content .container {
@@ -72,7 +72,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        overflow: hidden !important;
+        overflow-x: hidden !important;
     }
 
     .myLogo {

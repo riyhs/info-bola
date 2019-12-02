@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 // daftar event listener untuk setiap setiap menu
-                document.querySelectorAll(".sidenav a, .topnav a").forEach(function (elm) {
+                document.querySelectorAll(".sidenav li a, .topnav li a").forEach(function (elm) {
                     elm.addEventListener("click", function (event) {
                         // Tutup sidenav
                         var sidenav = document.querySelector(".sidenav");
@@ -54,6 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         xhttp.open("GET", "pages/" + page + ".html", true);
         xhttp.send();
-    }
 
+    }
 });

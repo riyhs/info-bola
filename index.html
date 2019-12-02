@@ -27,12 +27,14 @@
         </nav>
     </header>
 
-    <section id="content"> </section>
+    <section id="content" onload="fungsi()"> </section>
 
     <footer>
     </footer>
 
     <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/idb.js"></script>
+    <script src="assets/js/api.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
         // registr sw
@@ -50,7 +52,14 @@
         } else {
             console.error("Service Worker un-available in this browser.");
         }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            peringkat();
+            pertandingan();
+        });
     </script>
+
 </body>
 
 </html>
